@@ -1,0 +1,77 @@
+{
+  // Cmder Terminal Integration options
+  "terminal.integrated.shell.windows": "cmd.exe",
+  "terminal.integrated.env.windows": {
+    "CMDER_ROOT": "C:\\tools\\Cmder"
+  },
+  "terminal.integrated.shellArgs.windows": [
+    "/k",
+    "%CMDER_ROOT%\\vendor\\bin\\vscode_init.cmd"
+  ],
+
+  "terminal.integrated.scrollback": 10000,
+
+  "gitProjectManager.storeRepositoriesBetweenSessions": true,
+  "gitProjectManager.ignoredFolders": ["node_modules"],
+  "githubPullRequests.remotes": [],
+
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+  /*
+  // Beautify options to enable for filetypes Prettier does not support
+  "beautify.language": {
+    "html": ["htm", "html", "php", "erb"],
+    "css": ["css", "scss"],
+    "js": []
+  },
+  */
+
+  /*
+  // StandardJS Options (Semistandard)
+  "standard.enable": true,
+  "standard.semistandard": true,
+  "standard.run": "onType",
+  "standard.validate": ["javascript", "javascriptreact", "json", "html"],
+  "standard.options": {
+    "ignore": ["node_modules/**"],
+    "plugins": ["html", "flowtype"],
+    "parser": "babel-eslint",
+    "envs": ["jest"]
+  },
+  "semistandard.options": {},
+  */
+
+  // ESLint Options
+  "eslint.enable": true,
+  "eslint.debug": true,
+  //"eslint.trace.server": "verbose",
+  "eslint.alwaysShowStatus": true,
+
+  // Prettier Options
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.codeActionsOnSave": {
+    // For ESLint
+    "source.fixAll.eslint": true,
+    // For TSLint
+    "source.fixAll.tslint": true
+  },
+  "json.format.enable": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.validate.enable": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  //"javascript.preferences.quoteStyle": "single",
+  //"prettier.singleQuote": true,
+
+  "gitlens.hovers.enabled": false
+}
